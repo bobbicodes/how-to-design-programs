@@ -34,15 +34,18 @@ The expected result for these values is 5, but your expression should produce th
 Just in case you have not taken geometry courses or in case you forgot the formula that you encountered there, the point (x,y) has the distance
 $$\sqrt{x^2+y^2}$$
 from the origin. After all, we are teaching you how to design programs, not how to be a geometer.
+<br><br>
+Here's the formula in Racket (BSL):
+<br><br>
+(sqrt (+ (* x x) (* y y)))
+<br><br>
+And since we can use <a href="https://github.com/viebel/klipse">KLIPSE</a>, here it is in Clojure:
+<pre><code class="language-klipse">
+(def x 3)
+(def y 4)
+(Math/sqrt (+ (* x x) (* y y)))
+</code></pre>
 </h2>
-<br>
-<h1>
-<center>Other shit</center>
-</h1>
-
-Next:
-<br>
-<a href="proportions.html">Proportions</a>
 <script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
 </body>
 </html>
