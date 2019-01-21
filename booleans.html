@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>How to Design Programs</title>
+    <link rel="stylesheet" type="text/css" href="https://storage.googleapis.com/app.klipse.tech/css/codemirror.css">
+    <script>
+    window.klipse_settings = {
+        selector: '.language-klipse',
+    };
+</script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+<body>
+<h1>
+<center>1.5 The Arithmetic of Booleans</center>
+</h1>
+<h2>
+<a href="https://htdp.org/2018-01-06/Book/part_one.html#%28counter._%28exercise._arith-s1%29%29">Exercise 7</a>: Add the following two lines to the definitions area:
+<br><br>
+(define sunny #true)
+<br>
+(define friday #false)
+<br><br>
+Now create an expression that computes whether sunny is false or friday is true. So in this particular case, the answer is #false. (Why?)
+<br><br>
+Racket:
+<br><br>
+(or (not sunny) friday)
+<br><br>
+Clojure:
+<pre><code class="language-klipse">
+(def sunny true)
+(def friday false)
+
+(or (not sunny) friday)
+</code></pre>
+</h2>
+<br>
+<center>Next: <br><a href="mix-booleans.html">1.6 Mixing It Up with Booleans</a></center>
+<script src="https://storage.googleapis.com/app.klipse.tech/plugin/js/klipse_plugin.js"></script>
+</body>
+</html>
